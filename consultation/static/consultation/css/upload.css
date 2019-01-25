@@ -1,0 +1,27 @@
+.conversation-style{
+    border-radius: 290486px;
+    color: #8C43FF;
+    border: 2px solid #8C43FF;
+    padding: 10px 35px;
+    font-size: 18px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    text-align: center;
+    border-width: 2px;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    margin: 35px;
+    background-color: #fff;
+}
+
+.conversation-style:hover {
+    color: #fff;
+    background-color: #8C43FF;
+    text-decoration: none
+}
+
+#progress {
+    font-size: 24px;
+}
+
+

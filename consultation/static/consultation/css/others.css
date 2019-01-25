@@ -1,0 +1,145 @@
+.contact-style{
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+
+.contact-style2{
+    padding-top: 60px;
+    padding-bottom: 140px;
+}
+.contact-style22{
+    padding-top: 50px;
+    padding-bottom: 80px;  
+}
+
+.img-fluid-style2{
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.author{
+    padding-top: 15px;
+    font-size: 28px;
+    font-family: 'Teko', sans-serif;
+}
+
+.author-2{
+    font-family: 'Sarabun', sans-serif;
+    font-size: 18px
+}
+
+.author-3{
+    font-family: 'Satisfy', cursive;
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+
+.author-4{
+    padding-bottom: 30px;
+}
+
+.author-5{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.0vw;
+    padding-top: 20px;
+}
+
+
+.container-bg{
+    background-color: #293347;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+    margin-top: -190px
+}
+
+.conversation{
+    border-radius: 290486px;
+    color: #fff;
+    border: 2px solid #8C43FF;
+    padding: 10px 35px;
+    font-size: 18px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    text-align: center;
+    border-width: 2px;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    margin: 35px;
+}
+
+a.conversation:link {
+    text-decoration: none
+  }
+
+a.conversation:hover {
+    color: #fff;
+    background-color: #8C43FF;
+    text-decoration: none
+}
+
+.text-style3{
+    margin: 35px;
+}
+
+.text-style4{
+    margin: 20px;
+    font-size: 17px;
+    line-height: 1.5
+}
+
+#title_h3{
+    color: rgba(223, 219, 219, 0.808);
+    font-weight: 300px;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 25px;
+    padding: 70px;
+
+}
+
+#title_h4{
+    color: rgba(223, 219, 219, 0.808);
+    font-weight: 300px;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 20px;
+    padding: 70px;
+}
+.fab{
+    padding: 40px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 50%;
+}
+
+.fab:hover{
+    background-color: white;
+    color: #8C43FF;
+    border-color: #fff
+}
+
+.icon{
+    border-radius: 100%;
+    border: 2px solid rgba(192, 194, 196, 0.856);
+    padding: 15px;
+    padding-right: 32px;
+    font-size: 22px;
+    text-align: center;
+    border-width: 2px;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+}
+
+.container-fluid-footer{
+    background-color: #8C43FF;
+    color: whitesmoke;
+    padding: 110px  180px 10px 180px;
+    text-align: center;
+}
+
+#fonts{
+    font-size: 20px;
+}

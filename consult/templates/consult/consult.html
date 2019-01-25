@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block contact %}
+     <ul class="nav navbar-nav">
+        <li><a href="/"><i class="far fa-times-circle close"></i></a></li>
+        
+    </ul>
+{% endblock contact %}
+
+{% block body %}
+
+   <section>
+      <hr>
+      <div class="container-fluid text-center">
+         <img class="img-fluid avatar-contact" src="{% static 'consultation/images/avatar.svg' %}">
+      </div>
+
+      <div class="container-fluid text-center">
+         <h4 class="header"> My Free Consultation </h2>
+      </div>
+
+   </section>
+
+   <div class="container text-center">
+         {% if messages %}
+            {% for message in messages %}
+               <h5>{{ message }}</h5>
+            {% endfor %}
+         {% endif %}
+   </div>
+
+   <section>
+      <div class="container container-contact">
+         <form action="" method="POST">
+               {% csrf_token %}
+               {{ form.as_p }}
+
+               <div class="text-center">
+                  <input type="submit" value="Submit" class="conversation-submit">
+               </div>
+
+         </form>
+      </div>
+   </section>
+
+{% endblock body %}

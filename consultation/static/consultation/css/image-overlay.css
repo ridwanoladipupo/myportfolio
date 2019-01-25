@@ -1,0 +1,40 @@
+.container-overlay {
+    position: relative;
+    width: 50%;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 98%;
+    width: 99%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #293347;
+    border-radius: 11px;
+    margin-top: 8px;
+    max-height: 93.7%;
+    max-width: 94%;
+    margin-left: 22px;
+}
+
+  
+.container-overlay:hover .overlay {
+    opacity: 8;
+    transition-duration: 0.9s;
+}
+  
+.text2 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

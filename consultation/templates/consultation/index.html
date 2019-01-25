@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block contact %}
+    <ul class="nav navbar-nav">
+        <li> <a href="{% url 'contact:contact' %}" class="contact mr-auto"> Say Hello</a> </li>
+    </ul>
+{% endblock contact %}
+
+{% block body %}
+
+    <div class="container">
+        <div class="title">
+            <h2 id="title_h1 font-weight-bold"> Designer, Fullstack Developer & Mentor</h2> 
+            <h2 id="title_h2"> I design and code beautifully simple things, and I love what I do.</h2> 
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 mx-auto text-center">
+                <img class="img-fluid avatar" src="{% static 'consultation/images/avatar.svg' %}">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row ">
+            <div class=" mx-auto text-center">
+                <img class="img-fluid is-hero" src="{% static 'consultation/images/hero.png' %}" style ="max-width: 0%; max-height: auto">
+            </div>  
+        </div>
+    </div>
+
+    <section>
+        <div class="container-fluid container-fluid-intro">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 text-justify text-center text">
+                    <h1 class="dispaly-1 d-block">Hi, I’m Ridwan. Nice to meet you.</h1>
+                    <p class="lead font-weight-normal author-5">I am a fanatic of technological developments and expansions. 
+                     I possess skills in Software Development, Graphics design and Computer Hardware. 
+                     As a developer, I want to build my career under a reputable establishment and acquire cognitive experiences. I can express myself using QBAsic, Fortran, C, C++, C# Java and PHP, and that makes me a multi-linguist. However, Python | Django is my favourite language.
+                     I'm creative, adaptive, resilient, resourceful and result oriented team player with unwavering focus on organisational goals and targets..
+                    </p>    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container position-relative">
+            <div class="row item-pad">
+                <div class=" col-sm-6 col-md-4 border-right">
+                    <div class=" mx-auto text-center">
+                        <img class="img-fluid avatar-item" src="{% static 'consultation/images/icon-frontend.svg' %}" >
+                        <h4 class="avatar-inner font-weight-bold"> Frontend & Backend Developer </h4>
+                        <p class="lead avatar-inner-2"> I tend to code things from scratch, and enjoy bringing ideas to life in the browser. </p>
+                        <h5 class="avatar-inner-3 font-weight-bold"> Language I speak </h5>
+                        <p class="lead avatar-inner-2"> HTML, CSS, Bootstrap, C++, C#, Python/Django, MySQL, Sqlite. </p>
+                        <h5 class="avatar-inner-3 font-weight-bold"> Dev Tools</h5>
+                        <p class="lead avatar-inner-2"> Git, Github, Stack overflow, Freecodecamp,  HackerRank, Leetcode, Gitlab, Bootstrap, Bulma, VScode. </p>
+                    </div>
+                </div>
+                <div class=" col-sm-6 col-md-4 border-right">
+                    <div class="mx-auto text-center">
+                        <img class="img-fluid avatar-item" src="{% static 'consultation/images/icon-designer.svg' %}">
+                        <h4 class="avatar-inner font-weight-bold"> Designer </h4>
+                        <p class="lead avatar-inner-2"> I value simple content structure, clean design patterns, and thoughtful interactions. </p>
+                        <h5 class="avatar-inner-3 font-weight-bold"> Things I enjoy designing </h5>
+                        <p class="lead avatar-inner-2"> Logo, Business & ID card, Photo editing, Flyers, Posters etc. </p>
+                        <h5 class="avatar-inner-3 font-weight-bold"> Design Tools</h5>
+                        <p class="lead avatar-inner-2"> Adobe Photoshop, Adobe Illustrator, Canva, Pen & Paper. </p>
+                    </div>
+                </div>
+                <div class=" col-sm-6 col-md-4">
+                    <div class=" mx-auto text-center">
+                        <img class="img-fluid avatar-item" src="{% static 'consultation/images/icon-mentor.svg' %}">
+                        <h4 class="avatar-inner font-weight-bold"> Mentor </h4>
+                        <p class="lead avatar-inner-2"> I genuinely care about people, and love connecting people with their passion and technology. </p>
+                        <h5 class="avatar-inner-3 font-weight-bold"> Where I teach </h5>
+                        <p class="lead avatar-inner-2">Codify and Python track (Whatsapp Group). </p>
+                        <h5 class="avatar-inner-3 font-weight-bold"> Mentor Stats </h5>
+                        <p class="lead avatar-inner-2"> 2 years experience, More than 27 courses, 10+ students </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+       <div class="container-fluid container-fluid-work">
+       
+            <h2 class="text-center">My Recent work</h2>
+            <h3 id="title_h2">Here are a few recent design projects. Want to see more?. <a href="mailto: oladipuporidwanolayinka@gmail.com" class="contact">Email me</a></h3>
+
+            <div class="container-fluid text-center container-fluid-work">
+                <div class="row">
+                    {% if documents %}
+                    {% for document in documents %}
+                        <div class="col-sm-6 col-md-4 container-overlay">
+                            <img class="img-fluid img-fluid-style" src= "{{ document.screenshot.cdn_url }} alt=" ">
+                            <div class="overlay">
+                                <h6 class="text2">{{ document.description }} <br><br><a href="#" class="contact">Visit website</a></h6>                                
+                            </div>
+                        </div>   
+                    {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+       </div>
+    </section>
+
+    <section>
+       <div class="container-fluid container-fluid-invest text-center contact-style22">
+            <h4 class="text-center" >Interested in collaborating or investing?</h4>
+            <p class="contact-style" id="fonts" >I’m always open to discussing technology and its surrounding opportunities.</p>
+            <a href="##" class = "contact" id="fonts">Launch the Chat-widget to initiate a live chat with me</a>     
+       </div>
+    </section>
+    <hr><hr>
+    
+    <section>
+       <div class="container-fluid text-center contact-style2">
+            <h2 class="text-center author-4">Testimonials</h2>
+            <p class="author-3">People I've worked with have said some nice things..</p>
+            <img src="{% static 'consultation/images/ruben.jpg' %}" width="190" height="290" class="img-fluid img-fluid-style2">
+            <p class="avatar-inner-quote">“Ridwan was a real pleasure to work with and we look forward to <br> working with him again. 
+             He’s the kind of developer you can <br> trust with a project from start to finish.”</p>
+             <h4 class="author"> Ruben Arrebola</h4>
+             <p class="author-2">Junior .NET Developer, Indra & Group ICA.</p>
+                
+       </div>
+    </section>
+    
+     <section>
+        <div class="container-fluid container-fluid-footer">
+            <div class="container container-bg text-center"> 
+                <div class="row">
+                    <div class="col"> <h3 class="text-style3">Start Project</h3></div>
+                    <div class="col"> <h6 class="text-style4"> Do you have an opportunity to offer? or you're Interested in working together, We should queue up a chat. I’ll buy the coffee.</h6></div>
+                    <div class="col"> <a href="{% url 'consult:consult' %}" class = "conversation conversation-style" >Lets do it</a> </div>
+                </div>
+            </div>
+            <p id="title_h3">Living, learning, & leveling up one day at a time, towards the <br>technological advancement of the sustainable world.</p>
+            <a href="https://twitter.com/OLADIPUPORIDW18"><i class="fab fa-twitter icon"></i></a> 
+            <a href="https://www.linkedin.com/in/ridwan-oladipupo-b7b292139"> <i class="fab fa-linkedin-in icon"></i></a>
+            <a href="https://www.facebook.com/OReal009"><i class="fab fa-facebook-f icon"></i></a>
+            <a href="https://github.com/techcodify"><i class="fab fa-github icon"></i></a>
+            <p id="title_h4">Handcrafted by me <i class="far fa-copyright"></i> 2019.</p>
+        </div>
+    </section>
+{% endblock body %}
+    
+    
