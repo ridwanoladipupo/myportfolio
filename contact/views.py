@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib import messages
+
 from .forms import ContactForm
 
 
@@ -16,5 +17,8 @@ def contactme(request):
 
     else:
         form = ContactForm()
+        context = {
+            'form': form
+        }
         
-    return render(request, 'contact/contact.html', {'form': form})
+    return render(request, 'contact/contact.html', context)

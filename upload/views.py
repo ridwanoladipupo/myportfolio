@@ -1,7 +1,9 @@
 from django.shortcuts import render, redirect, HttpResponseRedirect
 from django.contrib import messages
+
 from .forms import DocumentForm
 from .models import Document
+
 
 def UploadView(request):
     if request.method == 'POST':

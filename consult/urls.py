@@ -1,7 +1,10 @@
 from django.urls import path
-from . import views
+
+from .views import book
+
 
 app_name = 'consult'
+
 urlpatterns = [
-    path('', views.book, name="consult"),
+    path('', book, name="consult"),
 ]
