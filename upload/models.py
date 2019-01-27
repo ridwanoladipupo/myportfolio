@@ -8,7 +8,6 @@ class Document(models.Model):
     screenshot = ImageField()
 
     def __str__(self):
-
         return self.screenshot
     
 
